@@ -15,7 +15,6 @@ const PizzaCard = ({ pizza }) => {
         alt={pizza.name}
         onLoad={() => setLoading(false)}
         className={`${loading && "hidden"}`}
-        loading="lazy"
       />
       {loading ? (
         <BounceLoader aria-label="Loading Spinner" data-testid="loader" />
