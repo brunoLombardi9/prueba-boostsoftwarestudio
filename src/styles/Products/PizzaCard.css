@@ -1,0 +1,35 @@
+img {
+  object-fit: contain;
+}
+
+.cardContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContainer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 20, 51, 0.8);
+  padding: 2rem;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.cardContainer img {
+  transition: all 0.4s ease;
+  height: 400px;
+}
+
+.cardContainer:hover .overlay {
+  opacity: 1;
+}
+
+.cardContainer:hover img {
+  transform: scale(1.1);
+}
