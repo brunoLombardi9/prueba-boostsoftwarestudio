@@ -1,6 +1,7 @@
 import "../styles/Home/Hero.css";
 import { Link } from "react-router-dom";
 import goUp from "../utils/goUp";
+import {transitions150} from "../utils/transitions.js"
 
 
 const Home = () => {
@@ -17,17 +18,17 @@ const Home = () => {
       </p>
 
       <div className="flex justify-center gap-5">
-        <Link to="/pizzas" onClick={goUp}>
+        <Link to="/foods" onClick={goUp}>
           <button
-            className={`py-4 px-2 font-bold rounded bg-orange hover:bg-strongOrange border-orange hover:border-strongOrange border-2 ${transitions}`}
+            className={`py-4 px-2 font-bold rounded bg-orange hover:bg-strongOrange border-orange hover:border-strongOrange border-2 ${transitions150}`}
           >
-            Nuestras pizzas
+            Nuestras comidas 
           </button>
         </Link>
 
         <Link to="/contact" onClick={goUp}>
           <button
-            className={`py-4 px-2 font-bold rounded bg-transparent hover:bg-white hover:text-black border-white border-2 ${transitions}`}
+            className={`py-4 px-2 font-bold rounded bg-transparent hover:bg-white hover:text-black border-white border-2 ${transitions150}`}
           >
             Reserva tu mesa
           </button>
@@ -39,4 +40,4 @@ const Home = () => {
 
 export default Home;
 
-const transitions = "transition-all duration-150 ease-in-out";
+

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "../../styles/Products/PizzaCard.css";
+import "../../styles/Products/ProductCard.css";
 import { BounceLoader } from "react-spinners";
 
-const PizzaCard = ({ pizza }) => {
+const ProductCard = ({ pizza }) => {
   const [loading, setLoading] = useState(true);
   return (
     <div
@@ -30,4 +30,4 @@ const PizzaCard = ({ pizza }) => {
   );
 };
 
-export default PizzaCard;
+export default ProductCard;

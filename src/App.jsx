@@ -9,7 +9,7 @@ import WhatsappIcon from "./components/WhatsappButton";
 
 export const appRoutes = [
   { name: "Home", path: "/", component: <Home /> },
-  { name: "Pizzas", path: "/pizzas", component: <Products /> },
+  { name: "Comidas", path: "/foods", component: <Products /> },
   { name: "Contacto", path: "/contact", component: <Contact /> },
 ];
 

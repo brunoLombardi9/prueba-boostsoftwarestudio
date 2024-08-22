@@ -1,0 +1,1 @@
+export const transitions150 = "transition-all duration-150 ease-in-out";
