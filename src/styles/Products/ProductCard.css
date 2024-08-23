@@ -26,10 +26,12 @@ img {
   height: 400px;
 }
 
-.cardContainer:hover .overlay {
+.cardContainer:hover .overlay,
+.showOnMobile .overlay {
   opacity: 1;
 }
 
-.cardContainer:hover img {
+.cardContainer:hover img,
+.showOnMobile img {
   transform: scale(1.1);
 }

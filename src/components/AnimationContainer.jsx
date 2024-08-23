@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/AnimationContainer.css";
 
-const AnimationContainer = ({ children, mustReanimate = false }) => {
+const AnimationContainer = ({
+  children,
+  className = "",
+  mustReanimate = false,
+}) => {
   const ref = useRef(null);
   const [isIntersecting, setIntersecting] = useState(false);
   const [hasIntersected, setHasIntersected] = useState(false);
@@ -35,7 +39,7 @@ const AnimationContainer = ({ children, mustReanimate = false }) => {
     : "startFadeInEffect";
 
   return (
-    <div ref={ref} className={`${animationClass} text-center`}>
+    <div ref={ref} className={`${animationClass} ${className}`}>
       {children}
     </div>
   );

@@ -32,7 +32,7 @@ const Products = () => {
         Nuestras comidas
       </h1>
 
-      <h2 className="text-xl mb-5">
+      <h2 className="text-xl mb-5 mx-5">
         Conoce nuestra variedad de pizzas y empanadas caseras
       </h2>
 
@@ -41,7 +41,7 @@ const Products = () => {
           <button
             key={c}
             onClick={() => handleCategoryChange(c)}
-            className={`font-bold p-4 border-2 rounded w-[110px] md:w-[130px] flex justify-center items-center text-center ${transitions150} ${
+            className={`font-bold p-4 border-2 rounded w-[90px] md:w-[110px] lg:w-[130px] text-xs md:text-base flex justify-center items-center text-center ${transitions150} ${
               category === c
                 ? "bg-strongOrange border-strongOrange text-white"
                 : "border-orange hover:bg-orange"

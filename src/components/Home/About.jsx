@@ -26,7 +26,7 @@ const About = () => {
             }`}
             key={item.title}
           >
-            <AnimationContainer>
+            <AnimationContainer className="flex items-center">
               <img
                 src={item.picture}
                 className=" w-full lg:max-w-[400px] rounded"

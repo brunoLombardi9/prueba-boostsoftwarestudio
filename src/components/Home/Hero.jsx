@@ -6,12 +6,11 @@ import AnimationContainer from "../AnimationContainer.jsx";
 
 const Hero = () => {
   return (
-    // <AnimationContainer>
     <section
       id="hero"
       className="flex flex-col justify-center items-center gap- text-white"
     >
-      <AnimationContainer>
+      <AnimationContainer className="text-center">
         <h1 className=" font-bold text-4xl md:text-6xl">Pizzería Tagline</h1>
 
         <p className="text-md md:text-xl text-center max-w-[90%] md:max-w-[60%] mx-auto mt-5">
