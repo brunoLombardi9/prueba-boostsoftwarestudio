@@ -34,7 +34,7 @@ const ProductCard = ({ pizza }) => {
     <AnimationContainer>
       <div
         ref={cardRef}
-        className={`cardContainer text-white bg-white rounded flex justify-center items-center h-full w-[90%] md:w-full mx-auto
+        className={`cardContainer text-white bg-white rounded flex justify-center items-center h-full w-[90%] md:w-full max-w-[300px] mx-auto
                   ${loading && "px-5 py-10"} ${isVisible && "showOnMobile"}`}
       >
         <img
