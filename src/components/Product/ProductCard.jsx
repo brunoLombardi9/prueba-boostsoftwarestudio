@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "../../styles/Products/ProductCard.css";
 import { BounceLoader } from "react-spinners";
+import AnimationContainer from "../AnimationContainer";
 
 const ProductCard = ({ pizza }) => {
   const [loading, setLoading] = useState(true);
   return (
+    <AnimationContainer>
     <div
       className={`cardContainer text-white bg-white rounded flex justify-center items-center h-full ${
         loading && "px-5 py-10"
@@ -27,6 +29,7 @@ const ProductCard = ({ pizza }) => {
         </div>
       )}
     </div>
+    </AnimationContainer>
   );
 };
 

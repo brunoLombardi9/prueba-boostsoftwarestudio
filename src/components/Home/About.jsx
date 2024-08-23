@@ -1,38 +1,51 @@
 import hornoDeBarro from "../../assets/hornoDeBarro.jpg";
 import pizzaCortando from "../../assets/pizzaCortando.jpg";
 import pizzaFamilia from "../../assets/pizzaFamilia.jpg";
+import AnimationContainer from "../AnimationContainer";
 
 const About = () => {
   return (
     <section className="flex flex-col gap-6">
-      <div className="flex flex-col gap-8 py-10 my-auto px-5 ">
-        <h2 className="text-center text-2xl">
-          Somos Pizzería Tagline, tu mejor elección para disfrutar de la
-          auténtica <span className="text-strongOrange">pizza artesanal</span>
-        </h2>
-        <p className="text-center text-xl">
-          Nuestros clientes no solo vienen por nuestras exquisitas pizzas, sino
-          también porque somos el lugar ideal para compartir momentos especiales
-          con la familia o amigos.
-        </p>
+      <div className="flex flex-col gap-8 py-10 my-auto px-5 lg:px-[150px] ">
+        <AnimationContainer>
+          <h2 className="text-center text-2xl">
+            Somos Pizzería Tagline, tu mejor elección para disfrutar de la
+            auténtica <span className="text-strongOrange">pizza artesanal</span>
+          </h2>
+          <p className="text-center text-xl">
+            Nuestros clientes no solo vienen por nuestras exquisitas pizzas,
+            sino también porque somos el lugar ideal para compartir momentos
+            especiales con la familia o amigos.
+          </p>
+        </AnimationContainer>
 
         {aboutItems.map((item, index) => (
-          <div  className={`flex flex-col md:flex-row gap-4 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`} key={item.title}>
-            <img
-              src={item.picture}
-              className="md:max-w-[400px] rounded"
-              alt={item.title}
-            />
-            <div className="flex-col my-auto">
-              <h2 className="text-2xl">{item.title}</h2>
-              <p className="text-xl">{item.text}</p>
-            </div>
+          <div
+            className={`flex flex-col lg:flex-row gap-4 mt-10 md:mt-0 ${
+              index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+            }`}
+            key={item.title}
+          >
+            <AnimationContainer>
+              <img
+                src={item.picture}
+                className=" w-full lg:max-w-[400px] rounded"
+                alt={item.title}
+              />
+            </AnimationContainer>
+
+            <AnimationContainer>
+              <div className="flex flex-col gap-7 justify-center text-justify">
+                <h2 className="text-4xl text-strongOrange mt-5">
+                  {item.title}
+                </h2>
+                <p className="text-2xl text-justify">{item.text}</p>
+              </div>
+            </AnimationContainer>
           </div>
         ))}
-
-         </div>
+      </div>
     </section>
-
   );
 };
 

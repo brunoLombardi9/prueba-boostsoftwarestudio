@@ -1,0 +1,26 @@
+.startFadeInEffect,
+.endFadeInEffect {
+  transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.startFadeInEffect {
+  transform: translateY(120px);
+  opacity: 0;
+}
+
+.endFadeInEffect {
+  transform: none;
+  opacity: 1;
+}
+/* 
+.delayS {
+  transition: all 1.2s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.delayM {
+  transition: all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.delayL {
+  transition: all 1.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+} */

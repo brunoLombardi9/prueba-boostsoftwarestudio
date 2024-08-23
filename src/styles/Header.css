@@ -30,6 +30,7 @@
   }
   
   header .active {
-    color: #fa6c01 !important;
+    color: #fa6c01 ;
     transition: 0.2s ease 0s;
   }
+
