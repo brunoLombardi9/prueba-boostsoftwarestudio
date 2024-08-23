@@ -35,7 +35,7 @@ const About = () => {
             </AnimationContainer>
 
             <AnimationContainer>
-              <div className="flex flex-col gap-7 justify-center md:text-justify">
+              <div className="flex flex-col gap-7 justify-center text-justify">
                 <h2 className="text-4xl text-strongOrange mt-4">
                   {item.title}
                 </h2>
