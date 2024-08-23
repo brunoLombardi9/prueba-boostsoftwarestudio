@@ -8,7 +8,7 @@ const ProductCard = ({ pizza }) => {
   return (
     <AnimationContainer>
     <div
-      className={`cardContainer text-white bg-white rounded flex justify-center items-center h-full ${
+      className={`cardContainer text-white bg-white rounded flex justify-center items-center h-full w-full ${
         loading && "px-5 py-10"
       }`}
     >

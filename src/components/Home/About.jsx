@@ -12,7 +12,7 @@ const About = () => {
             Somos Pizzería Tagline, tu mejor elección para disfrutar de la
             auténtica <span className="text-strongOrange">pizza artesanal</span>
           </h2>
-          <p className="text-center text-xl">
+          <p className="text-center text-xl mt-5">
             Nuestros clientes no solo vienen por nuestras exquisitas pizzas,
             sino también porque somos el lugar ideal para compartir momentos
             especiales con la familia o amigos.
@@ -35,11 +35,11 @@ const About = () => {
             </AnimationContainer>
 
             <AnimationContainer>
-              <div className="flex flex-col gap-7 justify-center text-justify">
-                <h2 className="text-4xl text-strongOrange mt-5">
+              <div className="flex flex-col gap-7 justify-center md:text-justify">
+                <h2 className="text-4xl text-strongOrange mt-4">
                   {item.title}
                 </h2>
-                <p className="text-2xl text-justify">{item.text}</p>
+                <p className="text-2xl md:text-justify">{item.text}</p>
               </div>
             </AnimationContainer>
           </div>

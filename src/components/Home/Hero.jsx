@@ -15,7 +15,7 @@ const Hero = () => {
         <h1 className=" font-bold text-4xl md:text-6xl">Pizzería Tagline</h1>
 
         <p className="text-md md:text-xl text-center max-w-[90%] md:max-w-[60%] mx-auto mt-5">
-          Bienvenidos a nuestra Tagline, donde cada pizza se prepara con pasión
+          Bienvenidos a nuestra Pizzería Tagline, donde cada pizza se prepara con pasión
           y los ingredientes más frescos. Disfruta de sabores auténticos en un
           ambiente acogedor.
         </p>
