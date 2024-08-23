@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-  margin-top: 116px;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-*{
+* {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+section {
+  margin-top: 116px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+#Home section {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
-h1{
+h1,
+h2,
+h2 span {
   font-family: "New Amsterdam", sans-serif;
   font-weight: 400;
   font-style: normal;

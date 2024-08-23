@@ -6,7 +6,7 @@ const ProductCard = ({ pizza }) => {
   const [loading, setLoading] = useState(true);
   return (
     <div
-      className={`cardContainer text-white bg-white rounded flex justify-center items-center ${
+      className={`cardContainer text-white bg-white rounded flex justify-center items-center h-full ${
         loading && "px-5 py-10"
       }`}
     >
