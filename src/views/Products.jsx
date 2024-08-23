@@ -32,7 +32,7 @@ const Products = () => {
         Nuestras comidas
       </h1>
 
-      <h2 className="mb-5">
+      <h2 className="text-xl mb-5">
         Conoce nuestra variedad de pizzas y empanadas caseras
       </h2>
 

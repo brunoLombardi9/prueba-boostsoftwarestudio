@@ -21,7 +21,7 @@ section {
 }
 
 h1,
-h2,
+#Home h2,
 h2 span {
   font-family: "New Amsterdam", sans-serif;
   font-weight: 400;
