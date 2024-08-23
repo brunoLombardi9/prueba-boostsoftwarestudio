@@ -40,7 +40,7 @@ const ProductCard = ({ pizza }) => {
         <img
           src={pizza.picture}
           alt={pizza.name}
-          onLoad={() => setLoading(true)}
+          onLoad={() => setLoading(false)}
           className={`${loading && "hidden"} `}
         />
         {loading ? (
