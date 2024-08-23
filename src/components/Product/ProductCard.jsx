@@ -40,11 +40,13 @@ const ProductCard = ({ pizza }) => {
         <img
           src={pizza.picture}
           alt={pizza.name}
-          onLoad={() => setLoading(false)}
+          onLoad={() => setLoading(true)}
           className={`${loading && "hidden"} `}
         />
         {loading ? (
-          <BounceLoader aria-label="Loading Spinner" data-testid="loader" />
+          <div className="min-w-[300px] flex justify-center items-center">
+            <BounceLoader aria-label="Loading Spinner" data-testid="loader" />
+          </div>
         ) : (
           <div className="overlay flex justify-center">
             <div className="flex flex-col justify-center items-center text-center h-full">
